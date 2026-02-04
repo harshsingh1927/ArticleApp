@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ArticleApp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h1>ArticleApp</h1>
+
+  <!-- Search -->
+  <input 
+    id="searchInput"
+    type="text"
+    placeholder="Search Article (14, 21A, 51A)"
+    onkeyup="searchArticle()"
+  />
+
+  <!-- Mode Toggle -->
+  <button class="mode-btn" onclick="toggleMode()">🌙</button>
+</header>
+
+<main id="app"></main>
+
+
+<div class="credit">
+  Created by Harsh Singh Rajput with ❤️
+</div>
+
+<!-- BOTTOM TABS -->
+<nav class="bottom-tabs">
+  <button id="tab-fr" onclick="loadFR()">FR</button>
+  <button id="tab-dpsp" onclick="loadDPSP()">DPSP</button>
+  <button id="tab-duties" onclick="loadDuties()">Duties</button>
+  <button id="tab-quiz" onclick="loadQuiz()">Quiz</button>
+</nav>
+
+<script src="data/articles-fr.js"></script>
+<script src="data/articles-dpsp.js"></script>
+<script src="data/articles-duties.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
